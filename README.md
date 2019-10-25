@@ -8,6 +8,8 @@ This add-on allows you to add an edit button that directly links to the entry be
 ## Button
 ```
 {exp:entry_quick_edit:button entry_id="12"}
+```
+```
 {exp:entry_quick_edit:button entry_id="12" background-color="rgb(84,176,203)" background-color-hover="#4193ab" }
 ```
 This will display a pre-styled button on the page if the user has permissions to the channel the entry is in. The button tag is best used for single-entry pages.
