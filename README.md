@@ -1,4 +1,4 @@
-# Entry-Quick-Edit
+# Entry Quick Edit
 
 ![](https://img.shields.io/badge/ExpressionEngine-4-3784B0.svg)
 ![](https://img.shields.io/badge/ExpressionEngine-5-3784B0.svg)
