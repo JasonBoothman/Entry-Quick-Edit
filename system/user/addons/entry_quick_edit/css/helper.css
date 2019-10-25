@@ -1,0 +1,15 @@
+#omb-quick-edit-button {
+    border: 0;
+    box-shadow: 0px 0px 4px rgba(0,0,0,.35);
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: .5rem 1rem;
+    position: fixed;
+        top: 2rem;
+        right: 0;
+    text-decoration: none;
+    transform: rotate(-90deg);
+    transform-origin: 100% 100%;
+    z-index: 9999999999;
+}
