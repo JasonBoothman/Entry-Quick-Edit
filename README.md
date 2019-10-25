@@ -3,7 +3,7 @@
 ![](https://img.shields.io/badge/ExpressionEngine-4-3784B0.svg)
 ![](https://img.shields.io/badge/ExpressionEngine-5-3784B0.svg)
 
-This add-on allows you to add an edit button (or link) that directly links to the entry being viewed and only displays if the user has channel privileges.
+This add-on allows you to add an edit button that directly links to the entry being viewed and only displays if the user has channel privileges.
 
 ## Button
 ```
