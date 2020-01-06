@@ -1,4 +1,4 @@
-# Entry Quick Edit
+# Control Panel Tweaks
 
 ![](https://img.shields.io/badge/ExpressionEngine-5-3784B0.svg)
 
@@ -30,3 +30,8 @@ $config['control_panel_tweaks_user_css'] = $basePath .'/assets/css/mycss.css';
 
 ## Compatibility
 This add-on should work just fine in ExpressionEngine 3 and 4, but I'm  listing it as ExpressionEngine 5 just because I haven't tested it in 3 or 4. The only thing that might be a little offer with 3 or 4 would be some styling tweaks, but it shouldn't cause any issues.
+
+## Haven't I seen someone else create this add-on?
+Yes, and no. I am the original developer of this add-on, but it was posted under my former employer, Reusser Design. I've been told that version will no longer be updated, so I've modified it (removed and added some features) and am rolling it out on a personal level.
+
+The originally posted version can still be found at https://github.com/reusserdesign/RD-Control-Panel-Tweaks
