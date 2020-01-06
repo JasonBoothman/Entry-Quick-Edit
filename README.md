@@ -1,34 +1,32 @@
 # Entry Quick Edit
 
-![](https://img.shields.io/badge/ExpressionEngine-4-3784B0.svg)
 ![](https://img.shields.io/badge/ExpressionEngine-5-3784B0.svg)
 
-This add-on allows you to add an edit button that directly links to the entry being viewed and only displays if the user has channel privileges.
+This add-on is used to modify default control panel styling in ExpressionEngine. Some of the styling is automatically changed while other parts you have access to modify.
 
-## Button
+## What is automatically changed?
+- The styling on the ‘Main’ navigation menu has been modified so it feels more like a main navigation bar and less like the custom navigation bar.
+- Fonts have been smoothed.
+- Spacing on the Entry Screen has been tweaked a little.
+- A divided line between fields on the Entry Screen has been added.
+
+## What can I change?
+- Hide the ‘Files’ button per Member Group*.
+- Hide the ‘Developers’ button per Member Group*.
+- Hide the 'Live Preview' button per Member Group*.
+- Add your own CSS to the control panel.
+
+*Note: Only Member Groups with access to the control panel will show up in this list. It also doesn't remove the ability to them to use this functionality (if they manually type in the URL), it just hides the links.
+
+## How do I add my own CSS to the control panel?
+With a config variable, of course!
+
+Create a config variable for 'control_panel_tweaks_user_css' and populate it with the server location of your CSS file.
+
+Example:
 ```
-{exp:entry_quick_edit:button entry_id="12"}
-```
-```
-{exp:entry_quick_edit:button entry_id="12" background-color="rgb(84,176,203)" background-color-hover="#4193ab" }
-```
-This will display a pre-styled button on the page if the user has permissions to the channel the entry is in. The button tag is best used for single-entry pages.
-
-#### Required Parameters
-*entry_id:* The Entry ID of the entry being viewed/linked to.
-
-#### Optional Parameters
-*color:* Set font color of the button. Default value is `#fff`.
-
-*color-hover:* Set the font color of the button on hover. Default value is `#fff`.
-
-*background-color:* Set the background color of the button. Default value is `##ff6600`.
-
-*background-color-hover:* Set the background color of the button on hover. Default value is `#cf5402`.
-
-## URL
-```
-{exp:entry_quick_edit:url entry_id="12"}
+$config['control_panel_tweaks_user_css'] = $basePath .'/assets/css/mycss.css';
 ```
 
-This will return the edit url of the entry if the user has permissions t othe channel the entry is in. The url tag is besed use in circumstances where you want completely control over the styling, markup or would like to have multiple edit buttons on a page (such as a news listing page).
+## Compatibility
+This add-on should work just fine in ExpressionEngine 3 and 4, but I'm  listing it as ExpressionEngine 5 just because I haven't tested it in 3 or 4. The only thing that might be a little offer with 3 or 4 would be some styling tweaks, but it shouldn't cause any issues.
